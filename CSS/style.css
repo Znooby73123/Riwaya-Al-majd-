@@ -1,0 +1,339 @@
+/* Nada Dawood Alali */
+
+/* Styling for the overall body of the page
+With the font and the allginment of the text
+and items and the background image and colors */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/background.svg');
+    background-repeat: repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #D9C3B0;
+}
+
+
+/* Styling for the Main Container with the
+adjested width and hight and the repeation of
+the background image of the page*/
+.container {
+    width: 576px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 5px;
+    min-height: calc(100vh - 1000px);
+    text-align: center;
+    background-image: url('C:\\Users\\lenovo\\OneDrive\\Desktop\\TheHistoryGame\\background.svg');
+    background-repeat: repeat;
+    background-size: cover; 
+    flex: 1;
+}
+
+/* Styling for game box labels */
+.game-box-label {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 6px;
+    padding: 0 10px 2px 10px;
+}
+
+/* Styling for game boxes and the border sizes
+and setting the postions */
+.game-box {
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #0A0F0D;
+    font-size: 22px;
+    border-radius: 12px; /* Rounded corners */
+    padding: 12px 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 1px 0px #85a392;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for game boxes */
+.game-box:hover {
+    box-shadow: 10px 10px 1px 0px #046831;
+    transform: translateY(-5px); 
+}
+
+/* Styling for focused game boxes
+to Change border color when focused
+and Removing the outline */
+.game-box:focus-within {
+    border: 2px solid #046831;
+    outline: none;
+}
+
+/* Styling for game box length */
+.game-box-len {
+    text-align: right;
+    margin: 3px 5px 10px 0px;
+    float: right;
+}
+
+/* Styling for game images */
+#gameImage {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 12px 12px 0 0; }
+
+
+/* Styling for paragraph elements */
+p {
+    font-size: 18px; 
+    color: #7e7d7d; 
+    margin-top: 10px; 
+}
+
+/* Addtional Styling for game box */
+.game-box {
+    position: relative;
+    background-color: #F2F2F2;
+    border: 1px solid #f2F2F2; 
+    border-radius: 12px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 5000px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+/* Styling for the hint container */
+#hintContainer {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Styling for hint on hovering */
+#hintContainer :hover{
+    box-shadow: 10px 7px 1px 0px #6e6d6a;
+
+}
+
+/* Styling for hint paragraphs */
+#hintContainer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for correct hints */
+#hintContainer p.correct-hint {
+    color: #ffffff; 
+    background-color: #046831; 
+    border: 1px solid #046831; 
+}
+
+/* Styling for incorrect hints */
+#hintContainer p.incorrect-hint {
+    color: #ffffff; 
+    background-color: #BF4B4B; 
+    border: 1px solid #BF4B4B; 
+}
+
+/* Styling for the password input field 
+withe the fonts and the hight and width
+and making the corners a bit rounded*/
+#passwordInput {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 6px; 
+    position: relative;
+    z-index: 1;
+}
+
+/* Styling for the background reminder of the password input */
+#passwordInput::before {
+    content: attr(data-reminder);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffe6; 
+    border-radius: 6px; 
+    z-index: -1;
+    filter: blur(10px); 
+    pointer-events: none;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #046831;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #052915; 
+    transform: translateY(-5px); 
+}
+
+/* Styling for the loading animation with
+making the postion fixed and changing the
+transition to be somther with a 1s delay */
+.loading-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #73534c; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; 
+    transition: 1s;
+}
+
+/* Styling for the loading animation image 
+Ensure the photo doesn't exceed the container
+Create a circular photo and Apply rotation animation*/
+.loading-animation img {
+    max-width: 10%; 
+    border-radius: 50%; 
+    animation: spin 3s linear infinite; 
+}
+
+
+/* Keyframes for rotation animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styling for the about button */
+#aboutButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the about button */
+#aboutButton:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+}
+
+/* Styling for the contact button */
+#ContactUs {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    transform: translateY(0); }
+
+/* Hover effect for the contact button */
+#ContactUs:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+
+/* Styling for the video button */
+#Video {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    transform: translateY(0); }
+
+/* Hover effect for the video button */
+#Video:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+
+/* Styling for the survey button */
+#Survey {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    transform: translateY(0); }
+
+/* Hover effect for the survey button */
+#Survey:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+
+/* Styling for the collaborations button */
+#Collaborations {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    transform: translateY(0); }
+
+/* Hover effect for the collaborations button */
+#Collaborations:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+

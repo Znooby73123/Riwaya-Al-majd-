@@ -1,0 +1,62 @@
+<!--Khadijah Alahmar-->
+<?php
+require 'connection.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+
+    <link rel="stylesheet" href="CSS/video.css">
+
+
+      <!-- Buttons for other pages -->
+      <a href="collab.html"><button id="Collaborations" >Collaborations</button></a>
+      <a href="Survey.php"><button id="Survey" >Survey</button></a>
+      <a href="admin_page.php"><button id="admin_page" >Login</button></a>
+      <a href="ContactUs.php"><button id="ContactUs" >Contact Us</button></a>
+      <a href="index.html"><button id="Home" > Home</button></a>
+      <a href="about.php"><button id="aboutButton" >About the Game</button></a>
+
+</head>
+<body>
+    <!-- Game title with image -->
+
+        <img src="images/logo.svg" alt="Home Page" id="gameImage">
+    </a>
+<div class="container">
+    <!-- Advertisement Video -->
+    <div class="ad-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u1oiDh0x7JE?si=5pTAg18OlUp3dN6r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>
+
+<?php
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Query to retrieve YouTube video link
+$sql = "SELECT youtube_video FROM video";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while($row = $result->fetch_assoc()) {
+        // Output YouTube video link as an iframe
+        echo '<iframe width="560" height="315" src="' . $row["youtube_video"] . '" frameborder="0" allowfullscreen></iframe>';
+    }
+} else {
+    echo "No video available";
+}
+
+// Close the database connection
+$conn->close();
+?>

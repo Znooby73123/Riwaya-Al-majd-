@@ -1,0 +1,45 @@
+<!-- Nada Alali -->
+<!-- Contact Us Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and Favicon -->
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+    <!-- Stylesheet for Contact Us page -->
+    <link rel="stylesheet" href="CSS/ContactUs.css">
+
+    <!-- Buttons for other pages -->
+    <a href="about.html"><button id="aboutButton" >About The Game</button></a>
+    <a href="Video.html"><button id="Video" >Video</button></a>
+    <a href="Collab.html"><button id="Collaborations" >Collaborations</button></a>
+    <a href="index.html"><button id="Home" > Home</button></a>
+    <a href="Survey.html"><button id="Survey" >Survey</button></a>
+
+
+</head>
+<body>
+    <!-- Game logo in the container -->
+    <img src="images/second-logo.svg" alt="Game Logo" id="gameImage">
+    <div class="container">
+        <!-- Contact form content -->
+        <h1>Contact Us</h1>
+        <form id="contactForm" action="submit_message.php" method="POST">
+            <!-- Text field for the message -->
+            <textarea id="message" name="message" placeholder="Type your message here" rows="6" required></textarea>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+            <!-- Contact info -->
+            <div class="contact-info">
+                <p>Email: RiwayaAlmajd@gmail.com📧</p>
+                <p>Phone: 96655**** ☎️</p>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="contactus.js"></script>
+</body>
+</html>

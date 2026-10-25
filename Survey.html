@@ -1,0 +1,83 @@
+<!-- Fai Aldossry -->
+<!-- Survey Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+    <link rel="stylesheet" href="CSS/survey.css">
+
+
+    <!-- Buttons for other pages -->
+    <a href="collab.html"><button id="Collaborations" >Collaborations</button></a>
+    <a href="Video.html"><button id="Video" >Video</button></a>
+    <a href="ContactUs.html"><button id="ContactUs" >Contact Us</button></a>
+    <a href="index.html"><button id="Home" > Home</button></a>
+    <a href="about.html"><button id="aboutButton" >About the Game</button></a>
+
+</head>
+<body>
+
+<!-- Game title with image -->
+<div class="game-title">
+    <img  src="images/logo.svg" alt="Game Logo" id="gameImage">
+</div>
+
+<form action="PHP/Survey.php" method="post" onsubmit="return validateForm()">
+    <!-- General Information -->
+    <fieldset class="game-box">
+        <legend class="game-box-label">General Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </fieldset>
+
+    <!-- Gameplay Experience -->
+    <fieldset class="game-box">
+        <legend class="game-box-label">Gameplay Experience</legend>
+        <label for="enjoyment">How much did you enjoy the game? (1-10)</label>
+        <input type="number" id="enjoyment" name="enjoyment" min="1" max="10" required>
+        <br>
+        <br>
+
+        <label class="game-box-len">What aspects of the game did you find most enjoyable?</label>
+        <textarea id="enjoyableAspects" name="enjoyableAspects" rows="4" required></textarea>
+    </fieldset>
+
+    <!-- Suggestions and Feedback -->
+    <fieldset class="game-box">
+        <legend class="game-box-label1">Suggestions and Feedback</legend>
+        <label class="game-box-len">Any suggestions for improving the game?</label>
+        <textarea id="improvements" name="improvements" rows="4"></textarea>
+        <br>
+        <br>
+
+        <label class="game-box-len">Would you recommend this game to others?</label>
+        <input type="radio" id="recommendYes" name="recommend" value="yes" required>
+        <label for="recommendYes">Yes</label>
+        <input type="radio" id="recommendNo" name="recommend" value="no">
+        <label for="recommendNo">No</label>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <input id="submit" type="submit" value="Submit">
+</form>
+
+<!-- Message div -->
+<div id="message"></div>
+<div id="error-message"></div>
+
+<script src="survey.js"></script>
+
+</body>
+</html>

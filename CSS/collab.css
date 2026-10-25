@@ -1,0 +1,246 @@
+/* Nada Dawood Alali */
+/* Futuer Collabration Page */
+
+/* Styling for the overall body of the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/8th-background.svg');
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #af8a81;
+  }
+  
+  /* Styling for the game title */
+  .container {
+    max-width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: calc(100vh - 1000px);
+    text-align: center;
+    background-repeat: repeat;
+    background-size: cover; 
+    flex: 1;
+   
+  }
+  
+ 
+  /* Styling for each slide */
+  .game-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for Headings */
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #73534c;
+    font-size: x-large;
+  }
+  
+  /* Styling for images inside slides */
+  .slideshow-container {
+    position: relative;
+    width: 600px; 
+    height: 200px; 
+    overflow: hidden;
+    border: 4px solid #73534c; 
+    border-radius: 15px;
+    box-shadow: 0 0 20px #73534c; 
+    background-color: #73534ccb;
+    margin: 0 auto; 
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+  }
+.slideshow-container:hover{
+  transform: translateY(-5px);
+   
+}
+  
+  /* Animation for fading slides */
+  .slide {
+    display: none;
+    align-items: center; 
+    justify-content: center; 
+    object-position: center;
+  }
+  
+  /* Ensure the image fits within its container */
+  .slide img {
+    max-width: 100%; 
+    max-height: 100%;
+  }
+  
+  
+  
+  
+  
+  
+/* Style for the forward and backward buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.fade {
+  animation: none;
+}
+
+/*  manual navigation insted of animiton  */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  object-position: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Ensure the first slide is visible by default */
+.slide:first-child {
+  display: block;
+}
+
+/* Styling for the about button */
+#aboutButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #73534c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s; 
+  transform: translateY(0);
+}
+
+/* Hover effect for the about button */
+#aboutButton:hover {
+  background-color: #3a2a26;
+  transform: translateY(-5px); 
+}
+
+/* Styling for the ContactUs button */
+#ContactUs {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+  background-color: #73534c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s; 
+  transform: translateY(0);
+}
+
+/* Hover effect for the ContactUs button */
+#ContactUs:hover {
+  background-color: #3a2a26;
+  transform: translateY(-5px); 
+}
+
+/* Styling for the Video button */
+#Video {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  background-color: #73534c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s; 
+  transform: translateY(0);
+}
+
+/* Hover effect for the ContactUs button */
+#Video:hover {
+  background-color: #3a2a26;
+  transform: translateY(-5px); }
+
+/* Styling for the Survey button */
+#Survey {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #73534c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s; 
+  transform: translateY(0);}
+
+/* Hover effect for the Survey button */
+#Survey:hover {
+  background-color: #3a2a26;
+  transform: translateY(-5px); }
+
+/* Styling for the Home button */
+#Home {
+  position: absolute;
+  top: 10px;
+  right: 155px;
+  background-color: #73534c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s; 
+  transform: translateY(0);}
+
+/* Hover effect for the Home button */
+#Home:hover {
+  background-color: #3a2a26;
+  transform: translateY(-5px); }

@@ -1,0 +1,212 @@
+/* Nada Dawood Alali */
+/* About The Game Page */
+
+/* Styling for the overall body of the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('3rd-background.svg');
+    background-repeat: repeat;
+    background-size: cover; 
+    background-color: #D9C3B0;
+}
+
+/* Styling for the main container */
+.container {
+    width: 1000px;
+    max-width: calc(100% - 20px);
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s; 
+    transform: translateY(0); 
+   
+}
+
+.container:hover{
+    transform: translateY(-5px); 
+}
+/* Styling for game images */
+#gameImage {
+    width: auto;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 12px; 
+    margin-top: 20px;
+}
+
+/* Styling for headings and paragraphs */
+h1, p {
+    margin-top: 10px;
+}
+
+/* Style for the three containers side by side */
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styling for each about box */
+.about-box {
+    background-color: #73534C;
+    border: 2px solid #73534C;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+
+}
+
+/* Styling for headings within about boxes */
+.about-box h2 {
+    color: #faede9;
+}
+
+/* Styling for paragraphs within about boxes */
+.about-box p {
+    color: #faede9;
+}
+
+/* Styling for the about button */
+#aboutButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the about button */
+#aboutButton:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+}
+
+/* Styling for the ContactUs button */
+#ContactUs {
+    position: absolute;
+    top: 10px;
+    right: 97px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the ContactUs button */
+#ContactUs:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+
+/* Styling for the Video button */
+#Video {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the Video button */
+#Video:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+
+}
+
+/* Styling for the Survey button */
+#Survey {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the Survey button */
+#Survey:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+}
+
+/* Styling for the Collaborations button */
+#Collaborations {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the Collaborations button */
+#Collaborations:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+}
+
+/* Styling for the Home button */
+#Home {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #73534c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s; 
+    transform: translateY(0); 
+}
+
+/* Hover effect for the Home button */
+#Home:hover {
+    background-color: #3a2a26;
+    transform: translateY(-5px); 
+}
